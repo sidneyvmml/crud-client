@@ -10,7 +10,7 @@ public class ClientDTO {
 	private String name;
 	private String cpf;
 	private Double income;
-	private Instant birthdate;
+	private Instant birthDate;
 	private Integer children;
 	
 //	private List<ClientDTO> clients = new ArrayList<>();
@@ -19,12 +19,12 @@ public class ClientDTO {
 		
 	}
 
-	public ClientDTO(Long id, String name, String cpf, Double income, Instant birthdate, Integer children) {
+	public ClientDTO(Long id, String name, String cpf, Double income, Instant birthDate, Integer children) {
 		this.id = id;
 		this.name = name;
 		this.cpf = cpf;
 		this.income = income;
-		this.birthdate = birthdate;
+		this.birthDate = birthDate;
 		this.children = children;
 	}
 	
@@ -33,7 +33,7 @@ public class ClientDTO {
 		this.name = entity.getName();
 		this.cpf = entity.getCpf();
 		this.income = entity.getIncome();
-		this.birthdate = entity.getBirthDate();
+		this.birthDate = entity.getBirthDate();
 		this.children = entity.getChildren();
 				
 	}
@@ -72,11 +72,11 @@ public class ClientDTO {
 	}
 
 	public Instant getBirthDate() {
-		return birthdate;
+		return birthDate;
 	}
 
-	public void setBirthDate(Instant birthdate) {
-		this.birthdate = birthdate;
+	public void setBirthDate(Instant birthDate) {
+		this.birthDate = birthDate;
 	}
 
 	public Integer getChildren() {

@@ -27,7 +27,7 @@ public class Client implements Serializable {
 	private Double income;
 	
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
-	private Instant birthdate;
+	private Instant birthDate;
 	private Integer children;
 	
 //	Set<Client> clients = new HashSet<>();
@@ -38,12 +38,12 @@ public class Client implements Serializable {
 	}
 
 
-	public Client(Long id, String name, String cpf, Double income, Instant birthdate, Integer children) {
+	public Client(Long id, String name, String cpf, Double income, Instant birthDate, Integer children) {
 		this.id = id;
 		this.name = name;
 		this.cpf = cpf;
 		this.income = income;
-		this.birthdate = birthdate;
+		this.birthDate = birthDate;
 		this.children = children;
 	}
 	
@@ -93,12 +93,12 @@ public class Client implements Serializable {
 
 
 	public Instant getBirthDate() {
-		return birthdate;
+		return birthDate;
 	}
 
 
-	public void setBirthDate(Instant birthdate) {
-		this.birthdate = birthdate;
+	public void setBirthDate(Instant birthDate) {
+		this.birthDate = birthDate;
 	}
 
 
